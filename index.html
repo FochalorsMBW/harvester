@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harves'Ter - Premium Vegetables</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-leaf"></i>
+                    <span>Harves'Ter</span>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="account-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search for vegetables...">
+            <button class="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Fresh & Organic <span>Vegetables</span></h1>
+                <p>Farm-fresh vegetables delivered right to your doorstep</p>
+                <a href="#shop" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-truck"></i>
+                <h3>Free Delivery</h3>
+                <p>On orders over $50</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>100% Organic</h3>
+                <p>Certified products</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-medal"></i>
+                <h3>Quality Assured</h3>
+                <p>Handpicked selection</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-undo"></i>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-container">
+                <div class="category-card">
+                    <img src="assets/leafy.jpg" alt="Leafy Greens">
+                    <h3>Leafy Greens</h3>
+                    <a href="#" class="category-link">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/rootvgt.jpg" alt="Root Vegetables">
+                    <h3>Root Vegetables</h3>
+                    <a href="#" class="category-link">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/seasonal.jpg" alt="Seasonal Vegetables">
+                    <h3>Seasonal Picks</h3>
+                    <a href="#" class="category-link">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/boxes.jpg" alt="Bundles & Boxes">
+                    <h3>Vegetable Boxes</h3>
+                    <a href="#" class="category-link">View All</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending" id="shop">
+            <h2 class="section-title">Our Featured Products</h2>
+            <div class="products-container" id="products-container">
+                <!-- Produk otomatis terisi disini -->
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-container" id="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <i class="fa-solid fa-user" style="color: #63E6BE;"></i>
+                    </div>
+                    <div class=" testimonial-content">
+                        <p>"I've never had such fresh vegetables before! The delivery was prompt and the quality is
+                            unmatched."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Briyan Maulana</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <i class="fa-solid fa-user" style="color: #ffc800;"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The weekly vegetable box subscription has completely changed how our family eats. So
+                            convenient!"</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4>Luthfi Al Hakim</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new products and seasonal offers</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Harves'Ter</h2>
+                    <p>At Harves'Ter, we believe in providing the freshest, highest-quality vegetables straight from
+                        local farms to your table. Our mission is to connect consumers with sustainable farming
+                        practices while promoting healthy eating habits.</p>
+                    <p>Every vegetable in our store is carefully selected, hand-picked, and delivered within 24 hours of
+                        harvest to ensure maximum freshness and nutritional value.</p>
+                    <a href="#" class="cta-button-secondary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/farm.jpg" alt="Our Farm">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Harves'Ter</span>
+                </div>
+                <p>Farm-fresh vegetables delivered to your doorstep with love and care.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Lubuk Bergalung, Harves'Ter</li>
+                    <li><i class="fas fa-phone"></i> +62 895-8061</li>
+                    <li><i class="fas fa-envelope"></i> info@Harvester.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8am - 8pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Harves'Ter. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="app.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>
